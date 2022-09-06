@@ -87,7 +87,7 @@ function App() {
         id: node.commentId,
         label: customLabel,
         comment: node.comment,
-        isExpanded: false,
+        isExpanded: true,
         children: convertCommentsToTree(node.replies),
       });
     }

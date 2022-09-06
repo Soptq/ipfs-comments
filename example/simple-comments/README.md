@@ -1,6 +1,21 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# Demo for IPFSComments SDK
+
+To build this example, you firstly need to duplicate `.env.sample` and rename it to `.env`:
+
+```shell
+cp .env.sample .env
+```
+
+Then, you need to fill in the `REACT_APP_WEB3_STORAGE_TOKEN` in `.env` with your Web3.Storage token.
+
+After that, you can run the following command to start the example:
+
+```shell
+npm install
+npm start
+```
 
 ## Available Scripts
 

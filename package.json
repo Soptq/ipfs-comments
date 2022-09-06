@@ -5,7 +5,6 @@
   "license": "(Apache-2.0 OR MIT)",
   "main": "dist/bundle.esm.min.js",
   "scripts": {
-    "prepare": "npm install --loglevel verbose && npm run build",
     "build": "npm run build:cjs && npm run build:esm",
     "build:cjs": "rollup --config --silent rollup.config.js",
     "build:esm": "rollup --config rollup.esm.config.js",

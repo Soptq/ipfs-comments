@@ -1,0 +1,27 @@
+{
+  "name": "ipfs-comments",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "(Apache-2.0 OR MIT)",
+  "main": "dist/bundle.esm.min.js",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "npm run build:cjs && npm run build:esm",
+    "build:cjs": "rollup --config --silent rollup.config.js",
+    "build:esm": "rollup --config rollup.esm.config.js",
+    "prettify": "yarn prettier --write ."
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "rollup": "^2.79.0",
+    "web3.storage": "^4.4.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "rollup-plugin-multi-input": "^1.3.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "prettier": "2.7.1"
+  }
+}

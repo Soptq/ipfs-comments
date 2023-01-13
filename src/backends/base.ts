@@ -6,7 +6,7 @@ import { IndexStorage } from "../types";
 export class BaseStorage {
 	protected appId: string;
 	protected encryptionKey: string;
-	protected cache: Cache;
+	cache: Cache;
 	public index: IndexStorage;
 
 	constructor(appId: string, encryptionKey: string) {
@@ -41,13 +41,13 @@ export class BaseStorage {
 
 	// This function is called to upload a data to IPFS.
 	// @ts-ignore
-	protected async push(data: any, appending: string): Promise<string> {
+	async push(data: any, appending: string): Promise<string> {
 		// not implemented
 	}
 
 	// This function is called to fetch a file from IPFS.
 	// @ts-ignore
-	protected async pull(ident: string): Promise<{ [key: string]: any }> {
+	async pull(ident: string): Promise<{ [key: string]: any }> {
 		// not implemented
 	}
 }
